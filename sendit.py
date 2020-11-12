@@ -35,11 +35,14 @@ os.system('rm -rf temp-cloc-clone')
 print("Enter desired email address to send the .CSV, and press ENTER:")
 mailTo = str(input())
 
+print("Enter sender's email password, and press ENTER:")
+mailPW = str(input())
+
 emailfrom = "patapptech@gmail.com"
 emailto = mailTo
 fileToSend = fileStr
 username = "patapptech@gmail.com"
-password = "Test!0qp"
+password = mailPW
 
 #Get user input for repo
 print("Enter email subject text, and press ENTER:")
