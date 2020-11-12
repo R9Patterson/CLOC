@@ -32,8 +32,11 @@ fileStr = strCSV+".csv"
 #Remove the repo from local storage
 os.system('rm -rf temp-cloc-clone')
 
+print("Enter desired email address to send the .CSV, and press ENTER:")
+mailTo = str(input())
+
 emailfrom = "patapptech@gmail.com"
-emailto = "patapptech@gmail.com"
+emailto = mailTo
 fileToSend = fileStr
 username = "patapptech@gmail.com"
 password = "Test!0qp"
